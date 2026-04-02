@@ -153,15 +153,37 @@ a {
     font-weight: 600;
 }
 
-.cast-grid {
+.cast-carousel {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, fr));
-    gap: 14px;
+    margin: 0;
+    padding: 0;
 }
 
 .cast-card {
     text-align: center;
+}
+
+.cast-carousel .cast-card {
+    padding: 4px;
+}
+
+.cast-carousel .owl-nav {
+    margin-top: 10px;
+}
+
+.cast-carousel.owl-theme .owl-nav [class*="owl-"] {
+    background: var(--brown-900);
+    color: var(--text-inverse);
+    border-radius: 999px;
+    padding: 6px 12px;
+}
+
+.cast-carousel.owl-theme .owl-dots .owl-dot span {
+    background: #b9a993;
+}
+
+.cast-carousel.owl-theme .owl-dots .owl-dot.active span {
+    background: var(--brown-900);
 }
 
 .cast-card img {
@@ -275,10 +297,6 @@ a {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .cast-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
     .reviews-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -292,11 +310,6 @@ a {
 @media (min-width: 1024px) {
     .movie-section {
         padding-top: 60px;
-    }
-
-    .cast-grid {
-        grid-template-columns: repeat(6, minmax(0, 1fr));
-        gap: 10px;
     }
 
     .cast-card img {
