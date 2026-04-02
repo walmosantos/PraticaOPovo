@@ -320,6 +320,13 @@ a {
         grid-template-columns: 320px 1fr;
     }
 
+    .movie-details h1 {
+        text-align: left;
+        font-size: 1.95rem;
+        line-height: 1.05;
+        margin-bottom: 12px;
+    }
+
     .details-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
