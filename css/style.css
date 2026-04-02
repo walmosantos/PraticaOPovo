@@ -268,7 +268,7 @@ a {
 
 @media (min-width: 768px) {
     .movie-layout {
-        grid-template-columns: 3320px 1fr;
+        grid-template-columns: 320px 1fr;
     }
 
     .details-grid {
@@ -276,15 +276,15 @@ a {
     }
 
     .cast-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .reviews-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .footer-layout {
-        grid-template-columns: 150px repeat(0, 1fr);
+        grid-template-columns: 150px repeat(3, minmax(0, 1fr));
         align-items: start;
     }
 }
@@ -308,7 +308,7 @@ a {
         font-size: 1.9rem;
     }
 
-    .detail-block p 
+    .detail-block p,
     .detail-item p {
         font-size: 1rem;
     }
