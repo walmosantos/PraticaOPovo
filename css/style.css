@@ -206,7 +206,7 @@ a {
     color: #414141;
 }
 
-.review-section {
+.reviews-section {
     padding: 38px 0 42px;
 }
 
@@ -277,10 +277,10 @@ a {
     color: var(--cream-200);
 }
 
-[data-reveal].is-visible {
+[data-reveal] {
     opacity: 0;
     transform: translateY(16px);
-    transform: opacity 0.45s ease, transform 0.45 ease;
+    transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 [data-reveal].is-visible {
